@@ -1,0 +1,35 @@
+Nom de l'algorithme:Algo_Croix
+
+//BUT:Demander à l'utilisateur un x eu la taille et afficher une croix avec des caractères de la taille demandée
+//ENTREE:Un x et une taille
+//SORTIE:Une croix en forme de x selon la taille entrée
+
+CONST: Pas de constantes
+VAR: carac:CARACTERE
+	 i,j,taille:ENTIER
+
+DEBUT
+
+ECRIRE "Veuillez entrer votre caractère"
+Lire carac
+ECRIRE "Veuillez entrer la taille de votre caractère"
+Lire taille
+
+SI i=j ALORS
+	ECRIRE carac
+SINON 
+	ECRIRE " "
+POUR i allant de 1 à taille FAIRE 
+DEBUT
+			POUR j allant de 1 à taille FAIRE
+			DEBUT
+					SI i=j ALORS
+					ECRIRE carac
+					SINON ECRIRE " "
+
+					FINSI
+			FINPOUR
+			FIN
+FINPOUR
+FIN
+
